@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@300;600&family=Fraunces:opsz,wght@9..144,300;9..144,700;9..144,900&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.learn{
+    @apply font-fra select-none font-bold mt-5 tracking-wider relative
+}
+.learn::after{
+    content: '';
+    @apply absolute h-2 w-28 uppercase bg-yellow-300 bottom-0 -right-1.5 -z-10 duration-700
+}
+.learn:hover::after{
+    content: "";
+   @apply h-5
+}
+.take:before{
+    content: '';
+    @apply inline border-[20px] border-r-transparent border-t-transparent border-l-transparent border-white absolute -top-[38px] right-0
+}
